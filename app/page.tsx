@@ -30,9 +30,9 @@ export default function Page() {
         <Image
           src={DogPic}
           alt='Dog promotional picture'
-          width={300}
+          width={400}
           placeholder='blur'
-          className='rounded-lg shadow-2xl dark:shadow-blue-300'
+          className='rounded-lg shadow-[0_1rem_5rem_-2rem] dark:shadow-blue-300'
         />
       </section>
     </>
