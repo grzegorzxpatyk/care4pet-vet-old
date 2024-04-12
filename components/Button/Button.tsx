@@ -7,7 +7,7 @@ const button = cva(
     "justify-center",
     "inline-flex",
     "items-center",
-    "rounded-xl",
+    "rounded",
     "text-center",
     "border",
     "border-blue-400",
@@ -33,15 +33,15 @@ const button = cva(
   }
 )
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLAnchorElement>, VariantProps<typeof button> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof button> {
   underline?: boolean
   href: string
 }
 
 export function Button({ className, intent, size, underline, ...props }: ButtonProps) {
   return (
-    <a className={twMerge(button({ intent, size, className, underline }))} {...props}>
+    <button className={twMerge(button({ intent, size, className, underline }))} {...props}>
       {props.children}
-    </a>
+    </button>
   )
 }
