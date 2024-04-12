@@ -1,3 +1,4 @@
+import { Button } from 'components/Button/Button';
 import Link from 'next/link';
 
 export default function Navigation() {
@@ -10,7 +11,7 @@ export default function Navigation() {
         <Link href='/mission'>Mission</Link>
         <Link href='/pricing'>Pricing</Link>
         <Link href='/live-demo'>Live demo</Link>
-        <Link href='/login' className='ml-6'>Sign in</Link>
+        <Link href='/login' className='ml-6'><Button size={'sm'}>Sign in</Button></Link>
       </div>
     </nav>
   );

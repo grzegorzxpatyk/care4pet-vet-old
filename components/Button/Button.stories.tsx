@@ -5,13 +5,13 @@ const meta: Meta<typeof Button> = {
   title: "Button",
   component: Button,
   args: {
-    intent: "primary",
+    variant: "primary",
     underline: false,
     children: "Button",
     size: "lg",
   },
   argTypes: {
-    intent: {
+    variant: {
       options: ["primary", "secondary"],
       control: { type: "select" },
     },

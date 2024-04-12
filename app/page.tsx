@@ -23,10 +23,8 @@ export default function Page() {
             designed to revolutionize the way you care for your furry patients.
           </p>
           <div className='flex flex-row items-center justify-start gap-2'>
-            <Button href='/'>Read more</Button>
-            <Button href='/' intent={'secondary'}>
-              Sign up
-            </Button>
+            <Button>Read more</Button>
+            <Button variant={'secondary'}>Sign up</Button>
           </div>
         </div>
         <Image
