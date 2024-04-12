@@ -9,8 +9,8 @@ export default function Navigation() {
       </Link>
       <div className='flex flex-row items-center justify-between gap-3'>
         <Link href='/mission'>Mission</Link>
+        <Link href='/features'>Features</Link>
         <Link href='/pricing'>Pricing</Link>
-        <Link href='/live-demo'>Live demo</Link>
         <Link href='/login' className='ml-6'>
           <Button size={'sm'}>Sign in</Button>
         </Link>
