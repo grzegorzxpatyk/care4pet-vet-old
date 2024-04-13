@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Navigation() {
   return (
-    <nav className='col-span-1 rounded bg-zinc-300 p-4 dark:bg-zinc-800 flex flex-col justify-start items-start'>
+    <nav className='col-span-1 flex flex-col items-start justify-start rounded bg-zinc-300 p-4 dark:bg-zinc-800'>
       <Link href='/dashboard' className='mb-4'>
         <h1 className='text-2xl font-bold'>
           <span className='text-blue-700'>Care</span>
