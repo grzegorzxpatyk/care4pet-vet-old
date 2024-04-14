@@ -14,7 +14,7 @@ const button = cva(
     'transition-all',
     'delay-50',
     'active:scale-95',
-    'font-semibold'
+    'font-semibold',
   ],
   {
     variants: {
