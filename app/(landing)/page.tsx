@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import { Button } from 'components/Button/Button';
+import Button from 'components/Button/Button';
 import DogPic from '../assets/dog-landing.jpg';
 
 export const metadata: Metadata = {

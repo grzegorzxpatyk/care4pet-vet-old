@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { Button } from 'components/Button/Button';
+import Button from 'components/Button/Button';
 
 export default function Navigation() {
   return (
-    <nav className='flex h-[12dvh] flex-row items-center justify-between rounded-lg border px-8 dark:border-none dark:bg-blue-900/50'>
+    <nav className='flex h-[12dvh] flex-row items-center justify-between rounded-lg px-8'>
       <Link href='/'>
         <h1 className='text-2xl font-extrabold'>Care4Pet - Vet</h1>
       </Link>

@@ -4,31 +4,34 @@ import { twMerge } from 'tailwind-merge';
 
 const button = cva(
   [
-    'justify-center',
     'inline-flex',
+    'justify-center',
     'items-center',
     'rounded',
     'text-center',
     'border',
-    'border-blue-400',
-    'transition-colors',
+    'border-zinc-700',
+    'transition-all',
     'delay-50',
+    'active:scale-95',
+    'font-semibold'
   ],
   {
     variants: {
       variant: {
-        primary: ['bg-blue-400', 'text-white', 'hover:enabled:bg-blue-700'],
-        secondary: ['bg-transparent', 'text-blue-400', 'hover:enabled:bg-blue-400', 'hover:enabled:text-white'],
+        primary: ['bg-zinc-900', 'text-zinc-200', 'hover:enabled:bg-zinc-800'],
+        secondary: ['bg-zinc-300', 'text-zinc-900', 'hover:enabled:bg-zinc-800', 'hover:enabled:text-zinc-200'],
       },
       size: {
-        sm: ['min-w-20', 'h-full', 'min-h-10', 'text-sm', 'py-1.5', 'px-4'],
-        lg: ['min-w-32', 'h-full', 'min-h-12', 'text-lg', 'py-2.5', 'px-6'],
+        sm: ['min-w-20', 'h-fit', 'min-h-10', 'text-sm', 'py-1.5', 'px-4'],
+        base: ['min-w-24', 'h-fit', 'min-h-10', 'text-base', 'py-2', 'px-4'],
+        lg: ['min-w-32', 'h-fit', 'min-h-12', 'text-lg', 'py-2.5', 'px-6'],
       },
       underline: { true: ['underline'], false: [] },
     },
     defaultVariants: {
       variant: 'primary',
-      size: 'lg',
+      size: 'base',
     },
   }
 );
@@ -37,7 +40,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   underline?: boolean;
 }
 
-export function Button({ className, variant: intent, size, underline, ...props }: ButtonProps) {
+export default function Button({ className, variant: intent, size, underline, ...props }: ButtonProps) {
   return (
     <button className={twMerge(button({ variant: intent, size, className, underline }))} {...props}>
       {props.children}
