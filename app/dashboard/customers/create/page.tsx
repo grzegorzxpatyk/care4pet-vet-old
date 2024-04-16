@@ -1,4 +1,4 @@
-import CreateCustomerForm from 'components/dashboard/CreateCustomerForm/CreateCustomerForm';
+import CreateCustomerForm from 'components/CreateCustomerForm/CreateCustomerForm';
 
 export default function Page() {
   return (

@@ -1,4 +1,4 @@
-import Navigation from 'components/Navigation/Navigation';
+import Navigation from 'components/LandingNavigation/Navigation';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
