@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Button from 'components/Button/Button';
 
 export default function Navigation() {
   return (
@@ -21,6 +22,11 @@ export default function Navigation() {
           </Link>
         ))}
       </ul>
+      <Link href='/' passHref className='w-full'>
+        <Button variant={'ghost'} className='w-full'>
+          Log out
+        </Button>
+      </Link>
     </nav>
   );
 }
