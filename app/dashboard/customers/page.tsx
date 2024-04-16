@@ -1,3 +1,9 @@
+import CustomersList from 'components/dashboard/CustomersList/CustomersList';
+
 export default function Page() {
-  return <div>Customers</div>;
+  return (
+    <>
+      <CustomersList />
+    </>
+  );
 }
