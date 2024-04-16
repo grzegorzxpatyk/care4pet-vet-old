@@ -40,9 +40,9 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   underline?: boolean;
 }
 
-export default function Button({ className, variant: intent, size, underline, ...props }: ButtonProps) {
+export default function Button({ className, variant, size, underline, ...props }: ButtonProps) {
   return (
-    <button className={twMerge(button({ variant: intent, size, className, underline }))} {...props}>
+    <button className={twMerge(button({ variant, size, className, underline }))} {...props}>
       {props.children}
     </button>
   );
